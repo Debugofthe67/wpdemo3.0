@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>WP7/8 Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="phone-container">
+        <!-- Home Screen -->
+        <div class="screen active" id="home-screen">
+            <div class="tile-grid">
+                <!-- Example of a single live tile (see JS for dynamism) -->
+                <div class="tile large bg-blue" data-target="weather-app">
+                    <div class="tile-content">
+                        <div class="front">Weather: 72°F</div>
+                        <div class="back">Chance of rain today</div>
+                    </div>
+                </div>
+                <!-- Example of a static small tile -->
+                <div class="tile small bg-green" data-target="messaging-app">
+                    <img src="sms-icon.png" alt="SMS">
+                    <span>Messaging</span>
+                </div>
+               <div class="tile small bg-red" data-target="git-profile">
+                    <img src="sms-icon.png" alt="Gthub">
+                    <span>Pro</span>
+ <div class="tile large bg-blue" data-target="Windows Desktop">
+                    <div class="tile-content">
+                        <div class="front">Have a chance to use windows</div>
+                        <div class="back">Use it today</div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Example App Screen -->
+        <div class="screen" id="weather-app">
+            <div class="app-header">
+                <button class="back-button">←</button>
+                <h1>Weather</h1>
+            </div>
+            <div class="app-content">
+                <p>Detailed weather view...</p>
+            </div>
+        </div>
+        <!-- Add more app screens here -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
